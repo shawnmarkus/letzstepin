@@ -19,7 +19,7 @@ const ContactForm = () => {
     e.preventDefault();
     const controller = new AbortController();
     const signal = controller.signal;
-    const res = await fetch("http://localhost:5000/sendEmail", {
+    const res = await fetch("https://letzstepinbackendserver.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(details),
